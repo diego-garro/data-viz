@@ -1,0 +1,23 @@
+[project]
+name = "data-viz"
+version = "0.1.0"
+description = "Data visualization in JS y Py book lecture"
+authors = [
+    {name = "diego-garro",email = "diego.garromolina@yahoo.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "black (>=26.5.1,<27.0.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "gspread (>=6.2.1,<7.0.0)",
+    "tweepy (>=4.17.0,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "data_viz", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
