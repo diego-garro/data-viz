@@ -1,6 +1,6 @@
 import gspread
 
-gc = gspread.service_account(filename="./data-visualization-505105-19331e0eaa9d.json")
+gc = gspread.service_account(filename="./google-service-account-credentials.json")
 ss = gc.open("test")
 print(ss.worksheets())
 ws = ss.worksheet("Hoja 1")
